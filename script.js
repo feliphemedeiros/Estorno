@@ -83,7 +83,7 @@
   }
   const MASCARAS = { telefone: mascTel, cpf: mascDocCliente, favDoc: mascDoc, vTotal: mascMoeda, vCanc: mascMoeda,
     dataVenda: mascData, codigo: soNumero, cartao: soNumero, ag: soNumero, nf: soNumero,
-    cliente: soLetras, fav: soLetras, motivo: soLetrasMotivo };
+    cliente: soLetras, fav: soLetras, resp: soLetras, motivo: soLetrasMotivo };
 
   // ---------- folha A4 ----------
   function dataExtenso(){ const d = new Date(); return d.getDate() + " de " + MESES[d.getMonth()] + " de " + d.getFullYear(); }
