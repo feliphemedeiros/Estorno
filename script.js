@@ -209,6 +209,10 @@
   vias.forEach(f => $("impressao").appendChild(f));
   function montaImpressao(){ const d = dados(); vias.forEach(f => preenche(f, d)); }
   window.addEventListener("beforeprint", montaImpressao);
+  // Ctrl+P também passa pela conferência dos campos (antes imprimia mesmo faltando dados)
+  document.addEventListener("keydown", e => {
+    if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) { e.preventDefault(); imprimir(); }
+  });
   // ---------- campos obrigatórios: ao imprimir/baixar, o que faltar fica vermelho ----------
   function faltando(){
     const f = [];

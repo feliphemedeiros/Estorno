@@ -375,3 +375,15 @@ html { overflow-y: scroll; }
 .dark .campo:has(input.erro) > label { color: #f87171; }
 .chips.erro .chip { border-color: #dc2626; background: #fef2f2; }
 .dark .chips.erro .chip { border-color: #ef4444; background: rgba(220,38,38,.12); }
+
+/* TED: a folha tem 5 linhas a mais (banco, ag, conta, favorecido, CPF) — compacta para caber tudo numa página A4 */
+.page.com-ted .logo { margin-bottom: 3mm; }
+.page.com-ted .logo img { height: 17mm; }
+.page.com-ted h2 { margin-bottom: 3mm; }
+.page.com-ted .intro { margin-bottom: 3mm; }
+.page.com-ted table.dados td { height: 6.6mm; }
+.page.com-ted table.pag td { height: 6mm; }
+.page.com-ted .info { margin: 4mm 0 4mm; }
+.page.com-ted .local { margin-bottom: 7mm; }
+.page.com-ted .linha { margin-bottom: 8mm; }
+.page.com-ted .nome-ass { margin: -7.5mm 0 4.5mm; }
